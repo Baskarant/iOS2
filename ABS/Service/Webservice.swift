@@ -47,8 +47,12 @@ class Webservice {
         }
         
         let  wordResponse = try JSONDecoder().decode([AcromineResponse].self, from: data)
+        if(wordResponse.count > 0){
         return wordResponse[0].name
-        
+        } else {
+        return []
+        }
+     
     }
 
 }

@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833132B92836D84C002F5665 /* ABSTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833132B82836D84C002F5665 /* ABSTesting.swift */; };
+		833132BB2836D864002F5665 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833132BA2836D864002F5665 /* XCTest.framework */; };
+		833132BC2836D864002F5665 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 833132BA2836D864002F5665 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		834CCB332826D75B007DCD4C /* ABSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CCB322826D75B007DCD4C /* ABSApp.swift */; };
 		834CCB352826D75B007DCD4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CCB342826D75B007DCD4C /* ContentView.swift */; };
 		834CCB372826D75C007DCD4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834CCB362826D75C007DCD4C /* Assets.xcassets */; };
 		834CCB3A2826D75C007DCD4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834CCB392826D75C007DCD4C /* Preview Assets.xcassets */; };
 		834CCB412826D799007DCD4C /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CCB402826D799007DCD4C /* Webservice.swift */; };
 		834CCB432826D85C007DCD4C /* Acromine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CCB422826D85C007DCD4C /* Acromine.swift */; };
-		8350ADE328361C3F0082DF64 /* Acromine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350ADE228361C3F0082DF64 /* Acromine.swift */; };
-		8350ADE528361D9F0082DF64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350ADE428361D9F0082DF64 /* XCTest.framework */; };
-		8350ADE628361D9F0082DF64 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8350ADE428361D9F0082DF64 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83F21A4E282815D500B1B688 /* AcromineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F21A4D282815D500B1B688 /* AcromineListViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8350ADE628361D9F0082DF64 /* XCTest.framework in Embed Frameworks */,
+				833132BC2836D864002F5665 /* XCTest.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		833132B82836D84C002F5665 /* ABSTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABSTesting.swift; sourceTree = "<group>"; };
+		833132BA2836D864002F5665 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		834CCB2F2826D75B007DCD4C /* ABS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834CCB322826D75B007DCD4C /* ABSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABSApp.swift; sourceTree = "<group>"; };
 		834CCB342826D75B007DCD4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,8 +43,6 @@
 		834CCB392826D75C007DCD4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		834CCB402826D799007DCD4C /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		834CCB422826D85C007DCD4C /* Acromine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acromine.swift; sourceTree = "<group>"; };
-		8350ADE228361C3F0082DF64 /* Acromine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acromine.swift; sourceTree = "<group>"; };
-		8350ADE428361D9F0082DF64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		83F21A4D282815D500B1B688 /* AcromineListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcromineListViewModel.swift; sourceTree = "<group>"; };
 		83F21A4F28282D8900B1B688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,16 +52,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8350ADE528361D9F0082DF64 /* XCTest.framework in Frameworks */,
+				833132BB2836D864002F5665 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		833132B72836D830002F5665 /* ABSTestingApp */ = {
+			isa = PBXGroup;
+			children = (
+				833132B82836D84C002F5665 /* ABSTesting.swift */,
+			);
+			path = ABSTestingApp;
+			sourceTree = "<group>";
+		};
 		834CCB262826D75B007DCD4C = {
 			isa = PBXGroup;
 			children = (
+				833132B72836D830002F5665 /* ABSTestingApp */,
 				834CCB312826D75B007DCD4C /* ABS */,
 				834CCB302826D75B007DCD4C /* Products */,
 				8379459F282A0C5F00736C8B /* Frameworks */,
@@ -79,7 +88,6 @@
 		834CCB312826D75B007DCD4C /* ABS */ = {
 			isa = PBXGroup;
 			children = (
-				8350ADE128361C240082DF64 /* Unit Test */,
 				837945AD282A3AD900736C8B /* Model */,
 				837945AA282A3AA500736C8B /* View */,
 				837945AB282A3AB800736C8B /* ViewModel */,
@@ -99,18 +107,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8350ADE128361C240082DF64 /* Unit Test */ = {
-			isa = PBXGroup;
-			children = (
-				8350ADE228361C3F0082DF64 /* Acromine.swift */,
-			);
-			path = "Unit Test";
-			sourceTree = "<group>";
-		};
 		8379459F282A0C5F00736C8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8350ADE428361D9F0082DF64 /* XCTest.framework */,
+				833132BA2836D864002F5665 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,9 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F21A4E282815D500B1B688 /* AcromineListViewModel.swift in Sources */,
+				833132B92836D84C002F5665 /* ABSTesting.swift in Sources */,
 				834CCB352826D75B007DCD4C /* ContentView.swift in Sources */,
 				834CCB432826D85C007DCD4C /* Acromine.swift in Sources */,
-				8350ADE328361C3F0082DF64 /* Acromine.swift in Sources */,
 				834CCB332826D75B007DCD4C /* ABSApp.swift in Sources */,
 				834CCB412826D799007DCD4C /* Webservice.swift in Sources */,
 			);

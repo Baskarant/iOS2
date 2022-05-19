@@ -15,10 +15,17 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            List(acromineListVM.name, id: \.lf ){
-                name in Text(name.lf)
+            List(acromineListVM.name, id: \.lf ){ name in
+                VStack(alignment: .leading){
+                    Text(name.lf)
+                        .font(.headline)
+                    Text(String("\(name.freq)"))
+                        .font(.headline)
+                    Text(String("\(name.since)"))
+                        .font(.headline)
+                }
             }.listStyle(.plain)
-                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always) )
+                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt:"Enter More than 2 character")
                 .onChange(of: searchText) { value in
                     Task.init{
                         if !value.isEmpty && value.count > 2 {
@@ -26,11 +33,13 @@ struct ContentView: View {
                         } else {
                             acromineListVM.name.removeAll()
                         }
+                    
                     }
                 }
             
                 .navigationTitle("ACROMINE")
         }
+
     }
 }
 
